@@ -83,6 +83,12 @@ nav a {
   margin-top: 25px;
 }
 
+.description {
+  font-family: var(--paragraph-font);
+  font-size: 20px;
+  padding: 5px;
+}
+
 /* Main Body Styling */
 h2 {
   font-family: var(--heading-font);
