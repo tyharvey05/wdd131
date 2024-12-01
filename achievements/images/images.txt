@@ -1,0 +1,4 @@
+The following images should be present in this directory:
+logo.png
+wireframegames.png
+wireframehome.png
