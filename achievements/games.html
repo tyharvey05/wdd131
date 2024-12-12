@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Showcase of achievements in games and art">
+    <meta name="author" content="Ty Harvey">
+    <title>Ty's Achievement Showcase</title>
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img class="logo" src="images/logo.png" alt="Website logo featuring a medal icon">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#art">Art</a></li>
+                </ul>
+            </nav>
+            <button class="cta-button">Contact</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="games">
+            <h2>Games I've Gotten 100% In</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="images/game1.jpg" alt="Game box art">
+                    <div class="card-content">
+                        <h3>Ghost of Tsushima</h3>
+                        <button class="toggle-description">Show Description</button>
+                        <p class="description" style="display: none;">After a mongol invasion, the last surviving samurai on the island of Tsushima abandons his code to get revenge on the invaders. I recieved all 52 trophies available in the game.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/game2.jpg" alt="Game box art">
+                    <div class="card-content">
+                        <h3>Astro Bot</h3>
+                        <button class="toggle-description">Show Description</button>
+                        <p class="description" style="display: none;">A robot named Astro Bot must rebuild his spaceship for himself and his friends after they become stranded by an alien attack. I recieved all 44 trophies available in the game.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p>&copy; 2024 Ty Harvey</p>
+                <nav>
+                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                </nav>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleButtons = document.querySelectorAll('.toggle-description');
+
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const description = button.nextElementSibling;
+                    if (description.style.display === 'none' || description.style.display === '') {
+                        description.style.display = 'block';
+                        button.textContent = 'Hide Description';
+                    } else {
+                        description.style.display = 'none';
+                        button.textContent = 'Show Description';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

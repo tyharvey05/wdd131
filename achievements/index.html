@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Showcase of achievements in games and art">
+    <meta name="author" content="Ty Harvey">
+    <title>Ty's Achievement Showcase</title>
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img class="logo" src="images/logo.png" alt="webiste logo featuring a medal.">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="#art">Art</a></li>
+                </ul>
+            </nav>
+            <button class="cta-button">Contact</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to My Achievement Showcase</h1>
+            <div class="me">
+                <img src="images/me.jpg" alt="A picture of me">
+                <p>My name is Ty Harvey and I enjoy achieving things. I also enjoy bragging about the things that I've achieved! Explore the other pages on this site to discover games I've proudly completed, and art I've hapily been apart of.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p>&copy; 2024 Ty Harvey</p>
+                <nav>
+                    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                </nav>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleButtons = document.querySelectorAll('.toggle-description');
+
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const description = button.nextElementSibling;
+                    if (description.style.display === 'none' || description.style.display === '') {
+                        description.style.display = 'block';
+                        button.textContent = 'Hide Description';
+                    } else {
+                        description.style.display = 'none';
+                        button.textContent = 'Show Description';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
